@@ -1,7 +1,6 @@
 <?php
 
-
-class BreadcrumbsDecorator{
+class BreadcrumbDecorator{
 
 	static public function render($separator = '/')
 	{
