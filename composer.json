@@ -3,7 +3,7 @@
     "type": "library",
     "description": "Universal Breadcrumbs",
     "homepage": "https://github.com/unamatasanatarai/shorturl",
-    "keywords": ["laravel5","url","url shortener","link"],
+    "keywords": ["breadcrumbs"],
     "license": "MIT",
     "authors": [
         {
@@ -17,9 +17,6 @@
         "classmap": {
             "src/Unamatasanatarai/Breadcrumbs"
         }
-    },
-    "require": {
-        "hashids/hashids": "1.0.*@dev"
     },
     "minimum-stability": "dev"
 }
