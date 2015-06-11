@@ -1,0 +1,25 @@
+{
+    "name": "unamatasanatarai/breadcrumbs",
+    "type": "library",
+    "description": "Universal Breadcrumbs",
+    "homepage": "https://github.com/unamatasanatarai/shorturl",
+    "keywords": ["laravel5","url","url shortener","link"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Unamata Sanatarai",
+            "email": "unamatasanatarai@gmail.com",
+            "homepage": "http://www.compelo.com/",
+            "role": "Main Developer"
+        }
+    ],
+    "autoload": {
+        "classmap": {
+            "src/Unamatasanatarai/Breadcrumbs"
+        }
+    },
+    "require": {
+        "hashids/hashids": "1.0.*@dev"
+    },
+    "minimum-stability": "dev"
+}
