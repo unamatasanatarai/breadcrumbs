@@ -1,7 +1,7 @@
 <?php
 
 
-class Breadcrumbs{
+class Breadcrumb{
 	private $crumbs = array();
 
 	static public function add($caption, $url = null)
