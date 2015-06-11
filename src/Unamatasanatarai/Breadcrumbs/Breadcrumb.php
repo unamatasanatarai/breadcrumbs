@@ -2,7 +2,7 @@
 
 
 class Breadcrumb{
-	private $crumbs = array();
+	public $crumbs = array();
 
 	static public function add($caption, $url = null)
 	{
