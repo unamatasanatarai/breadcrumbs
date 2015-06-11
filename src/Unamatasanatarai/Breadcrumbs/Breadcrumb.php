@@ -12,7 +12,7 @@ class Breadcrumb{
 		);
 	}
 
-	static public function get($caption, $url = null)
+	static public function get()
 	{
 		return self::$crumbs;
 	}
