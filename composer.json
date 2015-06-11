@@ -14,9 +14,9 @@
         }
     ],
     "autoload": {
-        "classmap": {
+        "classmap": [
             "src/Unamatasanatarai/Breadcrumbs"
-        }
+        ]
     },
     "minimum-stability": "dev"
 }
