@@ -2,18 +2,26 @@
 
 class BreadcrumbDecorator{
 
-	static public function render($separator = '/')
+	static public function bootstrap()
 	{
 		$crumbs = Breadcrumb::get();
-		$html = array();
-		foreach($crumbs as $crumb){
-			if (empty($crumb['url'])){
-				$html[] = $crumb['caption'];
+		$html = '<ol class="breadcrumb">';
+		for($i = 0; $i < sizeOf($crumbs); $i++){
+			$class = $i == sizeOf($crumbs) - 1
+				? ' class="active"'
+				: '';
+
+			$html .= "<li$class>";
+
+			if ($i == 0){
+				$html .= '<a href="' . $crumb['url'] . '"><i class="fa fa-dashboard fa-fw"></i></a>';
+			}elseif(empty($crumb['url'])){
+				$html = $crumb['caption'];
 			}else{
-				$html[] = '<a href="' . $crumb['url'] . '">' . $crumb['caption'] . '</a>';
+				$html = '<a href="' . $crumb['url'] . '">' . $crumb['caption'] . '</a>';
 			}
 		}
 
-		return implode($separator, $html);
+		return $html . '</ol>';
 	}
 }
