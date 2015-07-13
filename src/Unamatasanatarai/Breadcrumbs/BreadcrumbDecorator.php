@@ -14,9 +14,7 @@ class BreadcrumbDecorator{
 
 			$html .= "<li$class>";
 
-			if ($i == 0){
-				$html .= '<a href="' . $crumb['url'] . '"><i class="fa fa-dashboard fa-fw"></i></a>';
-			}elseif(empty($crumb['url'])){
+			if(empty($crumb['url'])){
 				$html .= $crumb['caption'];
 			}else{
 				$html .= '<a href="' . $crumb['url'] . '">' . $crumb['caption'] . '</a>';
